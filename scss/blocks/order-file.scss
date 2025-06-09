@@ -1,0 +1,78 @@
+.order-file {
+  max-width: 370px;
+  width: 100%;
+  border-radius: 3px;
+  border: 2px solid var(--blue);
+  background: var(--white);
+  height: 48px;
+  box-sizing: border-box;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include tablet {
+    margin: 0 auto;
+  }
+  &__delete {
+    margin-left: auto;
+    background: url("../icons/delete.svg") no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120%;
+      height: 140%;
+    }
+  }
+  &__icon {
+    width: 18px;
+    height: auto;
+    transition: .3s transform ease;
+  }
+  &__text {
+    color: var(--black-2);
+    font-size: var(--button-big);
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  &__input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+  &__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    &:hover {
+      & .order-file__icon {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+      }
+    }
+  }
+  &__block {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+  }
+}

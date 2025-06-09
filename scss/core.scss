@@ -1,0 +1,41 @@
+@import 'utils/variables';
+@import 'utils/reset';
+@import 'utils/mixins';
+@import 'utils/fonts';
+
+
+html,
+body {
+  font-size: 16px;
+  font-family: "Lato";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  background: var(--dark);
+  font-weight: 400;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1172px;
+  margin: 0 auto;
+}
+
+.mopen {
+  overflow: hidden;
+}
+
+.animated {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+  will-change: transform, opacity;
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@import 'blocks/_blocks';
+@import 'sections/_sections';

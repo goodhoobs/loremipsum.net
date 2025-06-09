@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoremIpsum.Net</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/png" sizes="256x256" href="/icons/favicon.png" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="title" content="LoremIpsum.Net" />
+    <meta name="description" content="At vero eos et accusamus et iusto odio dignissimos ducimus!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://loremipsum.net" />
+    <meta property="og:title" content="LoremIpsum.Net" />
+    <meta property="og:description" content="At vero eos et accusamus et iusto odio dignissimos ducimus!" />
+    <meta property="og:image" content="/images/meta-tags.jpg" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://loremipsum.net" />
+    <meta property="twitter:title" content="LoremIpsum.Net" />
+    <meta property="twitter:description" content="At vero eos et accusamus et iusto odio dignissimos ducimus!" />
+    <meta property="twitter:image" content="/images/meta-tags.jpg" />
+  </head>
+  <body>
+    <section class="section section--header animated">
+      <div class="container">
+        <header class="header">
+          <a href="/" class="header__logo">
+            <img src="images/logo.png" srcset="images/logo@2x.png 2x" alt="logo" />
+          </a>
+          <nav class="header__links">
+            <a href="#business" class="header__link header__link--active">Бизнес</a>
+            <a href="#about-us" class="header__link">О нас</a>
+            <a href="#prices" class="header__link">Цены</a>
+            <a href="#order-steps" class="header__link">Оформить заказ</a>
+          </nav>
+          <button class="header__show js-show-menu">
+            <span class="header__show-icon"></span>
+          </button>
+        </header>
+      </div>
+    </section>
+    <section class="section section--hero animated" id="about-us">
+      <div class="container">
+        <div class="hero animated">
+          <h1 class="hero__title"><span class="hero__title-accent">Lorem ipsum</span> dolor sit <br>amet consectetur <span class="hero__title-accent">adipiscing</span></h1>
+          <p class="hero__text">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+          <ul class="hero__list">
+            <li class="hero__item">Totam rem aperiam eaque ipsa</li>
+            <li class="hero__item">Sit voluptatem accusantium doloremque laudantium</li>
+            <li class="hero__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+          </ul>
+          <div class="hero__buttons">
+            <a href="#order" class="button">Заказать</a>
+            <a href="#order-steps" class="button button--white">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--order">
+      <div class="container">
+        <div class="steps animated" id="order-steps">
+          <h2 class="steps__title">Оформление <span>Заказа</span></h2>
+          <p class="steps__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+          <div class="steps-list">
+            <div class="steps-item">
+              <div class="steps-item__circle deley-1">
+                <img src="icons/search.svg" alt="search" />
+              </div>
+              <span class="steps-item__text">Lorem ipsum dolor sit amet</span>
+            </div>
+            <div class="steps-item">
+              <div class="steps-item__circle deley-2">
+                <img src="icons/percent.svg" alt="percent" />
+              </div>
+              <span class="steps-item__text">Сonsecteturadipiscing elit</span>
+            </div>
+            <div class="steps-item">
+              <div class="steps-item__circle deley-3">
+                <img src="icons/file.svg" alt="file" />
+              </div>
+              <span class="steps-item__text">Sed do eiusmod tempor</span>
+            </div>
+            <div class="steps-item">
+              <div class="steps-item__circle deley-4">
+                <img src="icons/message.svg" alt="message" />
+              </div>
+              <span class="steps-item__text">Esse cillum dolore eu fugiat</span>
+            </div>
+            <div class="steps-item">
+              <div class="steps-item__circle deley-5">
+                <img src="icons/money.svg" alt="money" />
+              </div>
+              <span class="steps-item__text">Excepteur sint occaecat cupidatat non proident</span>
+            </div>
+          </div>
+        </div>
+        <form class="order animated" id="order">
+          <div class="order-groups">
+            <div class="order-group">
+              <div class="select" id="select-form">
+                <div class="select__current">
+                  <span class="select__current-text">Выберите тип системы</span>
+                  <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="select__current-arrow">
+                    <path d="M14.9339 8.51072C14.9339 8.4393 14.8982 8.35894 14.8446 8.30537L14.3982 7.85894C14.3446 7.80537 14.2643 7.76965 14.1928 7.76965C14.1214 7.76965 14.0411 7.80537 13.9875 7.85894L10.4786 11.3679L6.96962 7.85894C6.91605 7.80537 6.83569 7.76965 6.76426 7.76965C6.68391 7.76965 6.61248 7.80537 6.55891 7.85894L6.11248 8.30537C6.05891 8.35894 6.02319 8.4393 6.02319 8.51072C6.02319 8.58215 6.05891 8.66251 6.11248 8.71608L10.2732 12.8768C10.3268 12.9304 10.4071 12.9661 10.4786 12.9661C10.55 12.9661 10.6303 12.9304 10.6839 12.8768L14.8446 8.71608C14.8982 8.66251 14.9339 8.58215 14.9339 8.51072Z" fill="currentColor"/>
+                  </svg>
+                </div>
+                <ul class="select__list">
+                  <div class="select__list-wrap">
+                    <li class="select__item">Sed ut perspiciatis</li>
+                    <li class="select__item">Nemo enim ipsam</li>
+                    <li class="select__item">Et harum quidem</li>
+                    <li class="select__item">Temporibus autem</li>
+                    <li class="select__item">Itaque earum rerum</li>
+                    <li class="select__item">Nemo enim ipsam</li>
+                    <li class="select__item">Et harum quidem</li>
+                    <li class="select__item">Temporibus autem</li>
+                    <li class="select__item">Itaque earum rerum</li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div class="order-group">
+              <input type="email" class="order-group__input" name="email" id="email" />
+              <label for="email" class="order-group__label">Ваш e-mail</label>
+            </div>
+            <div class="order-group">
+              <input type="text" class="order-group__input" name="name" id="name" />
+              <label for="name" class="order-group__label">Ваше имя</label>
+            </div>
+          </div>
+          <div class="order-blocks">
+            <div class="order-range">
+              <div class="order-range__info">
+                <span class="order-range__text">Sed ut perspiciatis, unde omnis iste natus</span>
+                <span class="order-range__percent" id="rangeValue">75 %</span>
+              </div>
+              <input type="range" min="0" max="100" value="75" id="rangeSlider" name="range" class="order-range__input" />
+            </div>
+            <div class="order-file">
+              <label for="file" class="order-file__button">
+                <img src="icons/file_form.svg" alt="file" class="order-file__icon" />
+                <span class="order-file__text">Прикрепить файл</span>
+                <input type="file" class="order-file__input" name="file" id="file" />
+              </label>
+              <div class="order-file__block">
+                <img src="icons/file_form.svg" alt="file" class="order-file__icon" />
+                <span class="order-file__text" id="fileName">file name</span>
+                <button class="order-file__delete" type="button"></button>
+              </div>
+            </div>
+          </div>
+          <button class="button button--big" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+    <section class="section section--footer">
+      <div class="container">
+        <footer class="footer">
+          <span class="footer__text">© 2018 «LoremIpsum.net» Все права защищены.</span>
+          <div class="payments">
+            <div class="payment">
+              <img src="icons/qiwi.svg" alt="qiwi" class="payment__icon" />
+              <span class="payment__text">Qiwi wallet</span>
+            </div>
+            <div class="payment">
+              <img src="icons/yandex.svg" alt="yandex" class="payment__icon" />
+              <span class="payment__text">Yandex Money</span>
+            </div>
+            <div class="payment">
+              <img src="icons/web_money.svg" alt="web money" class="payment__icon" />
+              <span class="payment__text">Web Money</span>
+            </div>
+          </div>
+          <nav class="contact__links">
+            <a href="mailto:info@ipsum228.com" class="contact__link">
+              <img src="icons/mail.svg" alt="mail" class="contact__link-icon" />
+              <span class="contact__link-text">info@ipsum228.com</span>
+            </a>
+            <a href="https://vk.com/LoremipsumNet" target="_blank" class="contact__link">
+              <img src="icons/vk.svg" alt="mail" class="contact__link-icon" />
+              <span class="contact__link-text">Мы вконтакте</span>
+            </a>
+          </nav>
+        </footer>
+      </div>
+    </section>
+    <div class="menu">
+      <div class="menu-block">
+        <a href="#business" class="menu-block__link">Бизнес</a>
+        <a href="#aboutus" class="menu-block__link">О нас</a>
+        <a href="#prices" class="menu-block__link">Цены</a>
+        <a href="#order" class="menu-block__link">Оформить заказ</a>
+      </div>
+    </div>
+    <script src="js/site.js"></script>
+  </body>
+</html>

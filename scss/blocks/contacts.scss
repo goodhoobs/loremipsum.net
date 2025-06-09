@@ -1,0 +1,36 @@
+.contact {
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    &-text {
+      color: var(--white);
+      font-size: var(--link-fs);
+      line-height: normal;
+    }
+    &-icon {
+      width: 20px;
+      height: auto;
+      transition: .3s transform ease;
+    }
+    &:hover {
+      & .contact__link-icon {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+      }
+    }
+    &s {
+      display: flex;
+      align-items: center;
+      gap: 38px;
+      @include sm-laptop {
+        gap: 20px;
+      }
+      @include mobile {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+}

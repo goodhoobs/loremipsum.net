@@ -1,0 +1,94 @@
+.select {
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid var(--white);
+  background: var(--white-opacity);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 10px;
+  height: 48px;
+  cursor: pointer;
+  &.active {
+    background: var(--select-open);
+    border-color: var(--dark);
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+  }
+  &__current {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    &-text {
+      color: var(--black-2);
+      font-size: var(--text-m);
+      line-height: normal;
+      .active & {
+        color: var(--white);
+      }
+    }
+    &-arrow {
+      width: 20px;
+      height: auto;
+      color: var(--black);
+      .active & {
+        transform: scale(-1);
+        color: var(--white);
+      }
+    }
+  }
+  &__item {
+    color: var(--white);
+    font-size: var(--text-m);
+    line-height: 1;
+    transition: .3s color ease;
+    cursor: pointer;
+    padding: 2px 0;
+    &:hover {
+      color: var(--link-hover);
+    }
+  }
+  &__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    width: calc(100% + 2px);
+    max-height: 180px;
+    background: var(--black-2);
+    border: 1px solid var(--dark);
+    z-index: 10;
+    padding: 2.5px 4px 2.5px 10px;
+    box-sizing: border-box;
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+    &-wrap {
+      overflow: auto;
+      flex-direction: column;
+      gap: 14px;
+      display: flex;
+      max-height: 170px;
+      padding: 8px 0;
+      box-sizing: border-box;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        width: 7px;
+      }
+      &::-webkit-scrollbar-track {
+        background: rgba(61, 64, 80, 0.7);
+        border-radius: 3px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--blue);
+        border-radius: 3px;
+      }
+      @-moz-document url-prefix() {
+        scrollbar-width: auto;
+        scrollbar-color: var(--blue) rgba(61, 64, 80, 0.7);
+        overflow: scroll;
+      }
+    }
+    .active & {
+      display: block;
+    }
+  }
+}

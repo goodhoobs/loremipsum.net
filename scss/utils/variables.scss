@@ -1,0 +1,59 @@
+:root {
+  --white: #FFFFFF;
+  --white-opacity: rgba(255, 255, 255, 0.85);
+  --range-background: rgba(255, 255, 255, 0.70);
+  --header-background: rgba(16, 16, 30, 0.90);
+  --menu-background: rgba(16, 16, 30, 1);
+  --select-open: rgba(60, 64, 81, 0.85);
+  --black: #000000;
+  --black-2: #272733;
+  --link-hover: #43ABF0;
+  --blue: #3E9CDC;
+  --dark: #3D4050;
+  --grey: #BBBBBB;
+  --grey-2: #C3C3C3;
+  --grey-3: #C4C4C4;
+  --button-border: #6F6D7B;
+  //--select-list: rgba(39, 39, 52, 0.9);
+
+  --h1: 48px;
+  --h2: 36px;
+  --text: 20px;
+  --text-m: 18px;
+  --text-s: 16px;
+  --link-fs: 13px;
+  --button-big: 15px;
+  --input-fs: 18px;
+}
+
+@media (max-width: 1280px) {
+  :root {
+    
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --h1: 42px;
+    --h2: 30px;
+    --text: 18px;
+  }
+}
+
+@media (max-width: 550px) {
+  :root {
+    --h1: 32px;
+    --h2: 24px;
+    --text-m: 16px;
+    --text-s: 14px;
+  }
+}
+
+@media (max-width: 370px) {
+  :root {
+    --h1: 28px;
+    --h2: 22px;
+    --text-m: 16px;
+    --text-s: 14px;
+  }
+}

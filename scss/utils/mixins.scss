@@ -1,0 +1,53 @@
+@use 'sass:math';
+
+@mixin media($w) {
+  @media screen and (max-width: $w) {
+    @content;
+  }
+}
+@mixin xs {
+  @media screen and (max-width: 370px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: 550px) {
+    @content;
+  }
+}
+@mixin phone {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+@mixin xs-laptop {
+  @media screen and (max-width: 1100px) {
+    @content;
+  }
+}
+@mixin sm-laptop {
+  @media screen and (max-width: 1280px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (max-width: 1500px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (max-width: 1728px) {
+    @content;
+  }
+}
+
+@mixin xxl-desktop {
+  @media screen and (min-width: 1920px) {
+    @content;
+  }
+}

@@ -1,0 +1,22 @@
+.section--order {
+  background: url("../images/order_bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 121px 0 151px;
+  @include phone {
+    padding: 80px 0;
+  }
+}
+
+.order {
+  &-blocks {
+    margin-top: 30px;
+    display: flex;
+    gap: 26px;
+    width: 100%;
+    justify-content: space-between;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+}

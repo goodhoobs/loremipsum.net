@@ -1,0 +1,90 @@
+.section--hero {
+  background: url("../images/hero_bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  max-height: 850px;
+  padding: 200px 0 50px 0;
+  box-sizing: border-box;
+  @media screen and (max-height: 700px) {
+    height: 100%;
+  }
+  @include xs-laptop {
+    background-position: left;
+  }
+  @include mobile {
+    height: 100%;
+    padding: 150px 0 50px 0;
+  }
+}
+
+.hero {
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    @include mobile {
+      flex-direction: column;
+      gap: 20px;
+      & .button {
+        width: 100%;
+      }
+    }
+  }
+  &__item {
+    color: var(--black);
+    font-size: var(--text);
+    line-height: normal;
+    position: relative;
+    @include mobile {
+      font-size: var(--text-m);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: -16px;
+      background: var(--black);
+      width: 5px;
+      height: 1.5px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 80px;
+    padding-left: 25px;
+    @include phone {
+      margin-bottom: 40px;
+    }
+    @include mobile {
+      gap: 8px;
+    }
+  }
+  &__text {
+    color: var(--black);
+    font-size: var(--text);
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  &__title {
+    color: var(--black);
+    font-size: var(--h1);
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    max-width: 780px;
+    margin-bottom: 80px;
+    @include phone {
+      margin-bottom: 40px;
+      & br {
+        display: none;
+      }
+    }
+    &-accent {
+      color: var(--blue);
+    }
+  }
+}
